@@ -5,24 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo da Velha</title>
         <link href="style.css" rel="stylesheet">
-        <script src="javascript.js"></script>
+        
     </head>
     <body>
-        <div id="divMenu">
-            <div id="divQuemComeca"></div>
-            <button onclick="">Iniciar Jogo</button>
+        <div id="conteiner">
+            <div id="divMenu">
+                <div id="divQuemComeca"></div>
+                <button id="bot" onclick="restart()">Iniciar Jogo</button>
+            </div>
+            <div id="stage">
+                <div>
+                <div id="0" class="square" ></div>
+                <div id="1" class="square" onclick=""></div>
+                <div id="2" class="square" onclick=""></div>
+                </div>
+                <div>
+                <div id="3" class="square" onclick=""></div>
+                <div id="4" class="square" onclick=""></div>
+                <div id="5" class="square" onclick=""></div>
+                </div>
+                <div>
+                <div id="6" class="square" onclick=""></div>
+                <div id="7" class="square" onclick=""></div>
+                <div id="8" class="square" onclick=""></div>
+                </div>
+            </div>
         </div>
-        <div id="divJogo">
-            <div id="posicao1" class="posicaoJogo" onclick=""></div>
-            <div id="posicao2" class="posicaoJogo" onclick=""></div>
-            <div id="posicao3" class="posicaoJogo" onclick=""></div>
-            <div id="posicao4" class="posicaoJogo" onclick=""></div>
-            <div id="posicao5" class="posicaoJogo" onclick=""></div>
-            <div id="posicao6" class="posicaoJogo" onclick=""></div>
-            <div id="posicao7" class="posicaoJogo" onclick=""></div>
-            <div id="posicao8" class="posicaoJogo" onclick=""></div>
-            <div id="posicao9" class="posicaoJogo" onclick=""></div>
-        </div>
+        <script src="./game.js"></script>
+        <script src="./interface.js"></script>
 
     </body>
 </html>

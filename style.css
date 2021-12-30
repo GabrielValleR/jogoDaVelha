@@ -1,58 +1,41 @@
-#divJogo{
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+body{
+    text-align: center;
 }
-.posicaoJogo{
-    width:50px;
-    height: 50px;
-    margin:0px;
-    padding: 0px;
-    cursor:pointer;
-    display: flex;
-    
-    
+button{
+    display: none;
 }
-#posicao1{
-    border-bottom: 1px solid black;
-    border-right:1px solid black;
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border:1px solid gray;
+    display: inline-block;
+    cursor: pointer;
 }
-#posicao2{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black ;
+.o{
+    position: relative;
 }
-#posicao3{
-    border-bottom: 1px solid black;
-    border-left: 1px solid black ;
+.o:after{
+    position: absolute;
+    content: "\1F6E1";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-#posicao4{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-right:1px solid black;
+.x{
+    position: relative;
 }
-#posicao5{
-    border: 1px solid black;
-    
-}
-#posicao6{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-left: 1px solid black ;
-}
-#posicao7{
-    border-top: 1px solid black;
-    border-right:1px solid black;
-}
-#posicao8{
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black ;
-}
-#posicao9{
-    border-top: 1px solid black;
-    border-left: 1px solid black ;
+.x:after{
+    position: absolute;
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
